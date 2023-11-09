@@ -51,10 +51,10 @@ public void Main(string argument, UpdateType updateSource)
 public void Setup()
 {
     // Get block references.
-    piston = piston ?? GridTerminalSystem.GetBlockWithName("Piston") as IMyPistonBase;
-    rotor = rotor ?? GridTerminalSystem.GetBlockWithName("Rotor") as IMyMotorStator;
-    hinge = hinge ?? GridTerminalSystem.GetBlockWithName("Hinge") as IMyMotorStator;
-    drill = drill ?? GridTerminalSystem.GetBlockWithName("Drill") as IMyShipDrill;
+    piston = piston ?? GridTerminalSystem.GetBlockWithName("RPiston") as IMyPistonBase;
+    rotor = rotor ?? GridTerminalSystem.GetBlockWithName("RRotor") as IMyMotorStator;
+    hinge = hinge ?? GridTerminalSystem.GetBlockWithName("RHinge") as IMyMotorStator;
+    drill = drill ?? GridTerminalSystem.GetBlockWithName("RDrill") as IMyShipDrill;
 
     // Ensure all blocks are found.
     if (piston == null || rotor == null || hinge == null || drill == null)
